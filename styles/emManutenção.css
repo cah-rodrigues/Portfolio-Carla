@@ -1,0 +1,13 @@
+.background-temporario{
+    background-image: url("../assets/backgroundTemporario.jpeg");
+    height: 100vh;
+}/*não apagar após construção da página, manter código para utilização futura*/
+
+@media (min-width: 320px) and (max-width: 1200px){
+    .background-temporario{
+        background-image: url(site-em-construcao.gif);
+        background-position: center;
+        width: 100%;
+        background-repeat: repeat-x;
+    }
+}

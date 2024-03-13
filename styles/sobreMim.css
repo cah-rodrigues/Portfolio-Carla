@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.apresentacao-conteudo-bio{
+    width: 70%;
+    margin: 0% 10% 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+@media (max-width: 1080px) {
+    .apresentacao-conteudo-bio{
+        width: 100%;
+        margin-top: 3%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media (max-width: 425px) {
+    
+    .apresentacao, .apresentacao-conteudo{
+        padding: 3rem 0;
+    } 
+}

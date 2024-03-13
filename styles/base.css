@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #f5f5f5;
+    --cor-terciaria: #FFEB01;
+    --cor-borda-botoes: #d2def7ea;
+    --cor-shadow-botoes: #0413dfea;
+    --cor-hover-inside-botoes: #011c22a9;
+    --cor-hover-borda-botoes: #ffdadb;
+    --cor-hover-shadow-botoes: #EC0105;
+    --cor-background-texto: #00000092;
+
+    --fonte-primaria: "Roboto", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(Teia-cosmica-James-Webb.png);
+    background-color: var(--cor-primaria);
+    background-position: top;
+    background-repeat: repeat;
+    color: var(--cor-secundaria);
+
+}
+i#burguer {
+    display: none;
+}
+
+.cabecalho {
+    overflow: hidden;
+    background-color: var(--cor-terciaria);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+}
+
+.cabecalho__menu {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__menu li {
+    list-style: none;
+    padding: 0%;
+    display: inline;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    float: left;
+    display: block;
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--cor-hover-inside-botoes);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__link img{
+    width: 2.5rem;
+}
+
+.esconder{
+    display: none !important;
+}
+
+a.botao-modo-texto{
+    padding:  0 1rem;
+    height: 3.25rem; 
+}
+
+
+
+main {
+    margin-top: 2rem;
+}
+
+.apresentacao {
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82;
+}
+
+.apresentacao-conteudo {
+    width: 100%;
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao-conteudo-subtitulo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.apresentacao-conteudo-texto {
+    width: 50%;
+    margin: 2% 0% 2%;
+    font-size: 1.3rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-style: normal;
+    background-color: var(--cor-background-texto);
+}
+
+.links {
+    /* background-color: #22D4FD;  */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.2rem solid var(--cor-borda-botoes);
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 1.3rem 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    box-shadow: 0.6rem 0.6rem 0.5rem var(--cor-shadow-botoes);
+}
+
+.links:hover {
+    background-color: var(--cor-hover-inside-botoes);
+    /* padding: 3%;  aumentava demais o botão e deformava a pág*/
+    border: 0.2rem double var(--cor-hover-borda-botoes);
+    box-shadow: 1rem 1rem 1rem var(--cor-hover-shadow-botoes);
+    /* font-size: 2rem; */
+    color: var(--cor-hover-borda-botoes);
+}
+
+.imagens-ia {
+    width: 50%;
+    margin-left: 3%;
+    border-radius: 3%;
+    border: 3px solid var(--cor-terciaria);
+    /* box-shadow: 0.5rem 0.5rem 0.5rem var(--cor-terciaria); */
+}
+
+.rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* .apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: #22D4FD;
+} >estilização dos links de certificado  que vou colocar na aba curriculo*/
+
+@media (max-width: 1080px) {
+    i#burguer {
+        display: block;
+        color: var(--cor-primaria);
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    i#burguer:hover {
+        background-color: var(--cor-hover-inside-botoes);
+        color: var(--cor-secundaria);
+        cursor: pointer;
+    }
+
+    .cabecalho {
+        padding: 0.5%;
+    }
+
+    .apresentacao {
+        padding-top: 3rem;
+        gap: 2%;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .imagens-ia {
+        width: 35%;
+        margin: 0;
+    }
+
+    .apresentacao-conteudo-texto {
+        width: 80%;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .botoes {
+        width: 100%;
+    }
+
+    .links {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .imagens-ia {
+        width: 70%;
+        margin: 2%;
+    }
+    .links {
+        font-size: 0.8rem;
+    }
+    .cabecalho .cabecalho__menu ul li:nth-child(3){
+        display: none;
+    }
+    /* .apresentacao, .apresentacao-conteudo{
+        padding: 0;
+    } */
+}

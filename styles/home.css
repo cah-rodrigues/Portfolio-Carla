@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-home{
+    display: flex;
+    justify-content: center;  
+}
+
+.code-titulo{
+    font-size: 2rem;
+    line-break: anywhere;
+    margin: auto;
+}
+
+.menor-maior{
+    color: #13d8f2;
+}
+
+.script-span{
+    color: #ff6600;
+    font-family: var(--fonte-primaria);
+}
+
+.const-span{
+    color: #2df817;
+}
+
+.destaque-span{
+    color: var(--cor-terciaria);
+    border: 0.05rem solid var(--cor-terciaria);
+    padding: 0.01rem;
+}
+
+.destaque-span-nome{
+    font-family: var(--fonte-secundaria);
+    font-size: 135%;
+    color: #ff00ff;
+    /* border: 0.05rem solid #ff00ff; */
+    padding: 0.01rem;
+}
+
+.apresentacao-conteudo-home{
+    width: 70%;
+    margin: 3% 10% 5%; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.acesse{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.botoes-redesSociais-home{
+    width: 40%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1080px){
+    .apresentacao-conteudo-home{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .code-titulo{
+        font-size: 1.5rem;
+        padding: 2%;
+    }
+    .acesse{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px){
+    .botoes-redesSociais-home{
+        width: 100%;
+    }
+}
+
+
+
